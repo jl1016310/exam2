@@ -23,7 +23,7 @@
     }
     echo "</table>";
 
-    // order summary should only include Customers, Orders, Total Spent
+  
     $stmt = $pdo->query(getCustomerOrderSummary());
     echo "<h2>Order Summary</h2>";
     echo "<table border='1'><tr><th>First Name</th><th>Last Name</th><th>Order Count</th><th>Total Spent</th></tr>";
@@ -33,12 +33,10 @@
     echo "</table>";
     ?>
 
-
-</body>
 <?php include 'components/footer.php'; ?>
-<style>
+</body>
 
-</style>
+
 
 
 </html>
